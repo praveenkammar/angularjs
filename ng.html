@@ -1,0 +1,30 @@
+<html ng-app="praveenApp">
+    <head>
+        <title>PRAVEEN</title>
+    </head>
+    
+    <body>
+
+       <!-- (dont use it)<div ng-controller="arrayctr">{{users}}</div>-->
+<div ng-controller="myctr">{{message}}</div>
+<div ng-controller="arrayctr">
+    <table border="1">
+        <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>company</th>
+        </tr>
+        <tr ng-repeat="user in users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.company}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<script src="appl.js"></script>
+
+    </body>
+</html>

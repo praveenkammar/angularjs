@@ -1,0 +1,22 @@
+<html ng-app="testapp">
+    <head><title>PRAVEEN</title></head>
+
+    <body>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="new.js"></script>
+        <div ng-controller="myctr">
+            <table border="1">
+                <tr>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>photo</th>
+                 </tr>
+                 <tr ng-repeat="player in players">
+                     <td>{{player.name}}</td>
+                     <td>{{player.age}}</td>
+                     <td><img ng-src="{{player.photo}}"/></td>
+                 </tr>
+            </table>
+        </div>
+    </body>
+</html>
